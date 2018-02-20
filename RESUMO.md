@@ -301,6 +301,120 @@ Se você deseja que a sua equipe seja eficiente e eficaz antes de assumir a entr
 
 <h3>Visualizar o fluxo de desenvolvimento de um time ágil</h3>
 
+* Mapear um fluxo que garanta o desenvolvimento de software em um ritmo sustentável, ou até mesmo que proteja as equipes das incessantes demandas geradas por diferentes facetas envolvidas na construção de um produto ou projeto, é um dos grandes desafios de Gestores, Agile Coaches, Scrum Master e time.
+
+* O CFD (Cumulative Flow Diagram) é uma excelente forma de compreender o fluxo de trabalho ao longo de um processo, afinal, o gráfico pode nos dar um panorama geral do que está acontecendo durante o desenvolvimento de um projeto ou produto.
+
+* A estrutura do gráfico é muito simples. O eixo horizontal representa um período de tempo (semanas, sprints etc) e o eixo vertical indica, de forma acumulada, o número de itens no processo (total de tarefas, total de histórias etc.). Cada área pintada no gráfico está relacionada a uma etapa no fluxo de trabalho (backlog, em progresso, finalizado etc) e as curvas são basicamente o número de itens acumulados em tais etapas.
+
+* Para que o gráfico do CF faça sentido, é fundamental que ele possua apenas itens que farão parte de todo o processo de desenvolvimento. Isto significa dizer que, dado que o time assumiu o compromisso de desenvolver determinado item, este não poderá sair do processo, o que fará com que a linha superior nunca tenha o comportamento de queda.
+
+<h3>Métricas que podem ser extraídas de um CFD</h3>
+
+Você pode extrair de um CFD as seguintes métricas:
+
+* WIP
+* Lead Time Médio
+* Throughput Médio
+
+Uma forma de extrair informações úteis do CFD é através de perguntas, como por exemplo:
+
+* O que está acontecendo com o nosso fluxo?
+* Nossas métricas estão mostrando um bom ou mau caminho?
+* Se estamos caminhando bem, como podemos manter?
+* Se estamos com problemas, que tipo de mudança precisamos fazer para que o fluxo melhore?
+
+<h3>Analisar a evolução do escopo e projetar prazos de entrega</h3>
+
+O gráfico de burnup tem como objetivo:
+
+* Aumentar a visibilidade do processo de desenvolvimento de software, garantindo que as pessoas interessadas no produto estejam alinhadas quanto ao progresso.
+* Apresentar, visualmente, como o crescimento do escopo pode influenciar o resultado entregue no final de um prazo estipulado
+Comunicar projeções de entrega com o objetivo de garantir alinhamento quanto às expectativas de entrega.
+
+<h3>Burndown vs Burnup</h3>
+
+* Os gráficos de burndown e burnup são tipos de visualizações que gestores e equipes utilizam para monitorar e comunicar o progresso de uma entrega.
+
+* O gráfico de burndown mostra quanto trabalho está faltando ser concluído em um espaço de tempo (semana, quinzena, trimestre etc). Já o gráfico de burnup apresenta quanto de trabalho foi feito e o total de trabalho necessário para a entrega. Tais gráficos são usualmente utilizados por equipes que trabalham com frameworks como Scrum ou algum tipo de metodologia ágil.
+
+* Conforme ilustrado, o gráfico de burndown é muito simples. Uma única linha é traçada e alcança o valor 0 quando a entrega estiver concluída.
+
+* Enquanto o gráfico de burndown não exibe os avanços de entrega conquistados pela equipe, impedindo inclusive que pessoas que estão fora do dia a dia acompanhem o desempenho na medida em que são incluídas novas demandas, o gráfico de burnup permite que quem o visualiza avalie rapidamente se tudo está em conformidade com o planejado ou se é preciso mobilizar algum tipo de plano de ação. Além disso, o gráfico de burndown não apresenta variações no escopo do que está sendo trabalhado.
+
+* Mudanças no escopo ocorrem quando um trabalho é adicionado ou removido. Vivenciamos mudanças quando um terceiro pede a inclusão de funcionalidades não previstas, ou quando é necessário remover algo do que havia sido planejado para que o prazo de entrega seja alcançado. O gráfico de burndown não mostra essa informação tão claramente quanto o gráfico de burnup, pois não possui, em uma mesma visualização, o tamanho do escopo (o que precisa ser feito) e o número de entregas realizadas até um determinado momento (o que já foi feito).
+
+Utilize o burnup como forma de responder às seguintes perguntas:
+
+* O escopo do projeto tem crescimento de forma saudável?
+* Quando finalizamos o atual escopo de trabalho?
+
+<h3>Utilizar o método de Monte Carlo para desenhar cenários de entrega</h3>
+
+* A simulação de Monte Carlo é uma técnica estatística que tem como objetivo estimar a probabilidade de um certo resultado, por meio da geração de centenas ou milhares de cenários baseados em números aleatórios para as entradas em um sistema. Em outras palavras, a simulação pode ser definida como um método que se baseia em uma grande quantidade de amostragens aleatórias para se chegar em resultados próximos dos reais.
+
+* O nome Monte Carlo surgiu como alusão a uma de suas principais características: a aleatoriedade na qual ocorre os jogos de cassino. Geralmente, o método é aplicado a problemas altamente incertos em que a computação direta é difícil, impraticável ou impossível. Ela provou ser uma ferramenta útil em diferentes situações, como na física nuclear, exploração de petróleo e gás, finanças, seguros etc.
+
+<h3>Como a simulação de Monte Carlo pode ser útil no desenvolvimento de software?</h3>
+
+* Antes que você passe a utilizar técnicas de projeção de cenários, sugiro que você faça uma reflexão sobre o quão saudável está o seu processo de desenvolvimento hoje. Se você tem um processo instável, os cenários futuros projetados pelas simulações não lhe dirão muita coisa.
+
+Você pode identificar que o processo não está saudável quando:
+
+* Existe uma alta variabilidade no lead time, isto é, itens levam muito tempo para serem entregues e outros são finalizados rápido demais.
+* São observados gargalos ao longo do processo em decorrência do acúmulo de trabalho em etapas intermediárias. Alguns exemplos são: excesso de demandas aguardando validação; muito trabalho sendo estocado em uma etapa que exige o trabalho de um especialista (como teste ou deploy).
+* Há um excesso de trabalho em andamento (WIP elevado). A taxa em que as demandas entram no processo é maior do que a taxa de saída (entrega).
+
+Quando estabilizado o processo, você estará apto a trabalhar com a simulação de Monte Carlo, que possui a seguinte estrutura:
+
+* Variáveis de entrada do sistema;
+* Distribuição probabilística usada para cada variável;
+* Variável de saída do sistema;
+
+Ao trazer a estrutura apresentada para o dia a dia de uma equipe que monitora a informação de throughput, o modelo seria representado da seguinte maneira:
+
+* Variáveis de entrada do sistema: throughput semanal.
+* Distribuição probabilística: bootstrap com reposição da amostra de throughput já observada no projeto.
+* Variável de saída do algoritmo: semana em que o escopo é finalizado, junto com a probabilidade de ocorrência.
+
+<h3>O que é bootstrap?</h3>
+
+* O termo bootstrap se refere, em geral, a uma técnica ou método de simulação, que objetiva a obtenção de intervalos de confiança para as estimativas dos parâmetros de interesse, por reamostragem do conjunto de dados original.
+
+* A base da técnica é a obtenção de um “novo” conjunto de dados, por reamostragem do conjunto de dados original.
+
+<h3>Dicas de como utilizar o gráfico de burnup e as projetos no seu dia a dia</h3>
+
+* Não caia na tentação de usar dados do passado para prever o cenário de entrega de um novo projeto. O motivo é que novos contextos demandam novos dados. 
+
+* Caso a equipe tenha ciência de que a área de negócios possui uma data de entrega fixada, passe a monitorar e negociar o que será o escopo de entrega e não quando ele será entregue. Costumo dizer para as equipes em que atuo que é mais positivo pensar em “o que será possível entregar até determinada data” do que agir com o pensamento de que  “não será possível entregar determinado escopo no prazo fixado” Prazo fixo exige um esforço de priorização, e por isso a utilização de técnicas como MoSCoW ou matriz de valor versus que lhe permitirão ser assertivo nas escolhas do que será parte do escopo de entrega.
+
+* Ao iniciar um novo projeto ou produto, tenha ciência de que as primeiras semanas de trabalho serão de pouquíssimas entregas de valor, pois a equipe estará em processo de estruturação.
+
+Caso você se depare com a necessidade de negociar o escopo, analise em primeiro lugar o que pode estar causando aumentos sucessivos no que será entregue. Crescimento no escopo geralmente é sinal de:
+
+* Questões complexas que foram descobertas em determinado momento do projeto;
+* Clientes e usuários que, ao interagirem com partes do produto que estão sendo construídas, começam a gerar novas demandas a partir de novas necessidades percebidas;
+
+<h3>E agora o que fazer?</h3>
+
+* Todas as discussões abordadas tiveram o intuito de reforçar a importância em se analisar e aplicar mudanças no processo, e não nas pessoas. É importante que você tenha um ambiente no qual as pessoas sejam estimuladas a criar, que tenham autonomia e que estejam engajadas no propósito do ambiente em que elas se encontram.
+
+* Se você está interessado em medir quantas linhas de código um desenvolvedor criou na semana passada ou quantas funcionalidades um testador validou na última iteração, seu foco passa a ser a cobrança de performance, a comparação de desempenho e o microgerenciamento. No fundo, você cria uma cultura na qual há abuso de poder.
+
+* Tenha em mente a todo momento que as métricas serão úteis para evoluir o processo, compreender o contexto, gerenciar os riscos, analisar as tendências, trabalhar com possibilidades e aumentar a visibilidade.
+
+* Ao construir ou analisar uma métrica, se questione: estou avaliando de fato algo que ajudará a evoluir o meu processo, ou estou querendo analisar o desempenho de uma pessoa? Elimine qualquer tipo de controle que seja inútil no seu objetivo de trazer visibilidade e previsibilidade para o fluxo de desenvolvimento da sua equipe.
+
+* Em hipótese alguma utilize as métricas como forma de comparar equipes. O motivo é simples: contexto.
+
+* Não é porque o throughput da equipe A é de 10 funcionalidades por semana e o da equipe B é de 3, que a primeira entrega mais valor para o negócio do que a segunda. Evite cair na tentação de comparar equipes através das métricas. Já cansei de observar equipes que trabalham na mesma empresa e que possuem ritmos de entregas diferentes.
+
+
+
+
+
+
 
 
 
