@@ -264,6 +264,44 @@ A = Média de throughput
 
 * A lei de Little, criada por John Little no início dos anos 60, tem relação com um conjunto de estudos desenvolvidos para compreender sistemas de fila. Segundo o próprio autor, um sistema de fila consiste em objetos discretos que podem ser chamados de itens, que chegam a alguma taxa em um sistema. Os itens podem ser carros em uma cabine de pedágio, pessoas em uma linha de um restaurante fast food, aviões em uma linha de produção ou instruções esperando para serem executadas em um computador.
 
+* Na maioria dos casos, o serviço é o gargalo que cria a fila;
+
+* Para exemplificar a aplicação da forma, Little usou o exemplo de um rack de vinho. Digamos que você tem um rack de vinho que, em média, tem 100 garrafas nele. Vamos ainda dizer que você reabastece o rack a uma taxa média de duas garrafas por semana. Tendo em mãos tais informações, podemos determinar quanto tempo, em média, uma determinada garrafa gasta alojada no rack. A partir da equação, temos que L é igual a 100 e A é igual a 2. Aplicando tais valores, temos que uma dada garrafa de vinho fica, em média, 50 semanas no rack;
+
+As premissas da lei de Little são:
+
+* Um sistema de filas estável - a média do WIP no início do período do cálculo deve ser muito próxima da média no final do período e a idade média dos itens que compõem o trabalho em progresso não deve estar mudando, nem para mais, nem para menos.
+* Um período de tempo arbitrariamente longo sob observação para garantirmos que o processo estacionário - média, variância e estrutura de autocorrelação não mudam no decorrer do tempo Isto é o mesmo que dissermos que os dados estão em um plano liso, sem tendência, variância constante no decorrer do tempo, uma estrutura de autocorrelação constante no decorrer do tempo e nenhum flutuação periódica.
+* Que o cálculo seja realizada usando unidades consistentes - por exemplo, se o tempo média de um item no sistema é expresso em dias, então o número de itens chegando ao sistem também deve ser declarado em termos de dias.
+
+Algumas mudanças nas premissas são necessárias quando passamos a olhar a lei de Little sob a perspectiva de throughput e não a partir da taxa de entrada. Segundo Vacanti (2015) são elas:
+
+* A entrada média ou taxa de chegada deve ser igual à taxa média de saída;
+* Todo o trabalho que é iniciado será eventualmente concluído e sairá do sistema;
+* A quantidade de WIP deve ser aproximadamente a mesma no início e no final do intervalo de tempo escolhido para o cálculo;
+* A idade média do WIP não deve aumentar nem decrescer;
+* Lead time, WIP e throughput devem ser medidos usando unidades consistentes;
+
+Você como orientador do processo de sua equipe poderá seguir diretrizes como:
+
+* Só iniciaremos um novo trabalho aproximadamente na mesma proporção em que terminarmos o que já está no processo.
+* Colocaremos todos os esforços necessários para terminar qualquer trabalho iniciado e minimizaremos a possibilidade de se trabalhar com itens que possam ser descartáveis.
+* Se o trabalho da equipe por ventura ficar bloqueado, faremos tudo o que pudermos para desbloqueá-lo o mais rápido possível.
+Antes de trazermos um novo item de trabalho para o fluxo de desenvolvimento, analisaremos se existe algo em WIP que esteja com um lead time alto e daremos foco para finalizá-lo.
+
+<h3>O uso do throughput a partir de um caso real</h3>
+
+Se você deseja que a sua equipe seja eficiente e eficaz antes de assumir a entrega de qualquer trabalho, faça com que s pessoas pensem nas seguintes perguntas:
+
+* Qual é o resultado esperado por quem está demandando?
+* Conseguimos simplificar a solução para que possamos validá-la junto ao usuário final, evitando assim retrabalho?
+* Quais os tipos de demandas o time vem lidando no seu dia a dia? O que é prioridade no momento?
+
+* Como primeira dica para que a sua equipe não sofra os efeitos do aumento do lead time, reduza as incertezas das demandas. Quanto antes a equipe tirar dúvidas técnicas e de negócio, mais familiarizada com a solução ela estará. Descobrir problemas no início do desenvolvimento é mais barato do que em etapas futuras.
+
+<h3>Visualizar o fluxo de desenvolvimento de um time ágil</h3>
+
+
 
 
 
