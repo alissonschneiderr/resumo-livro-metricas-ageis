@@ -29,7 +29,7 @@ Em 2010 David Anderson criou o que ele chamou de “sistema Kanban para desenvol
 
 * <b>Comece com o que você já faz hoje:</b> Crie formas de visibilidade e busque evoluir o processo.
 * <b>Busque mudanças incrementais:</b> Melhore sempre sem ser radical.
-* <b>Respeite o processo atual, seus papéis, responsabilidades e cargos: Faça melhorias evolutivas e não seja disruptivo.
+* <b>Respeite o processo atual, seus papéis, responsabilidades e cargos:</b> Faça melhorias evolutivas e não seja disruptivo.
 * <b>Visualize o fluxo de trabalho:</b> Divida o trabalho em partes, escreva cada demanda em um cartão e tenha visão de todo o trabalho em andamento.
 * <b>Limite o trabalho em progresso:</b> Atribua limites explícitos para a quantidade de itens que podem estar em andamento em cada etapa do fluxo de trabalho.
 * <b>Torne as políticas explícitas:</b> Defina, divulgue e socialize o processo, assim todos terão uma clareza de como funciona e de como o trabalho é realmente feito.
