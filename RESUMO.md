@@ -135,7 +135,7 @@ Existem cinco etapas decorrentes desses pressupostos:
 * Critérios de desempenho definidos (quando necessário);
 * Existência de um alinhamento entre as partes que construirão e avaliarão a demanda;
 
-* Mike Cohn, define que uma história de usuário com qualidade deve seguir os critérios agrupados no acrônimo INVEST. O autor defende que, se a história falhar em algum dos critérios, o time deverá repensá-la ou até mesmo reescrevê-la.
+Mike Cohn, define que uma história de usuário com qualidade deve seguir os critérios agrupados no acrônimo INVEST. O autor defende que, se a história falhar em algum dos critérios, o time deverá repensá-la ou até mesmo reescrevê-la.
 
 * <b>Independent (Independente):</b> histórias devem ser independentes uma das outras sempre que possível, para que seja fácil priorizá-las.
 * <b>Negotiable (Negociável):</b> histórias não são contratos para implementar funcionalidades. Boas histórias captam a essência e não os detalhes.
@@ -144,7 +144,137 @@ Existem cinco etapas decorrentes desses pressupostos:
 * <b>Small (Pequena):</b> boas histórias são pequenas, pois são mais fáceis de se estimar e planejar.
 * <b>Testable (Testável):</b> os testes demonstram que uma história alcançou as expectativas dos usuários/clientes.
 
+<h3>Identifique o tempo para a entrega de uma demanda</h3>
 
+* Conviver em um ambiente no qual clientes, usuários e equipe não possuem visibilidade sobre o tempo que é necessário para que determinado trabalho seja concluído gera desconfiança, dúvida, ruído na comunicação e, principalmente, a sensação de que tudo poderia ser feito mais rápido.
+
+* Se você lida no dia a dia com demandas que levam muito tempo e outras que acabam rápido demais, saiba que tal variabilidade é um grande ofensor quando se está em busca de um processo previsível, e dificilmente você conseguirá prever entregas futuras.
+
+* Para a indústria, lead time representa a latência entre a iniciação e a execução de um processo. No setor de bens industriais, a redução de tal métrica representa um aspecto-chave da manufatura enxuta (lean manufacturing).
+
+* No contexto de desenvolvimento de software, podemos considerar o lead time como sendo o número de dias entre o início e o fim do processo de entrega de um item de trabalho (por exemplo, história do usuário, bugs etc).
+
+* A mensuração do lead time no desenvolvimento de software passou a ganhar notoriedade quando David Anderson, criador do método Kanban, trouxe à tona a importância de coletar a métrica. No entanto, medi-la independe do método de trabalho que está sendo adotado.
+
+<h3>Medir lead time é útil para:</h3>
+
+* Compreender quanto tempo a equipe tem levado para desenvolver um item de trabalho;
+* Analisar a saúde do processo de desenvolvimento dado que altas dispersões representam algum tipo de gargalo ou aumento no tempo de passagem em alguma etapa do fluxo de desenvolvimento (exemplo: nas últimas duas semanas lead time das histórias de desenvolvimento cresceram, pois o ambiente de homologação estava com problemas e os testes eram mais complexos);
+* Identificar casos extremos (do inglês, outliers) e aprender com o ocorrido (exemplo: determinando bug levou muito mais tempo do que o normal para ser corrigido em decorrência da ausência de clareza sobre o que era de fato problema a ser resolvido);
+* Analisar se a equipe tem entregue os itens de trabalho dentro de um padrão de dias ou semanas (exemplo: a maioria das histórias de usuário da equipe estão dentro de um período de 2 semanas);
+* Para compreender os efeitos que as incertezas e as complexidades não mapeadas podem causar, na forma da variabilidade, no tempo necessário para conclusão dos itens de trabalho de uma equipe de desenvolvimento de software;
+
+Caso você esteja em um contexto em que o software já é um produto e precisa de evoluções e correções de falhas, e que o feedback do usuário e o tempo de resposta ao mercado são aspectos extremamente sensíveis, medir o lead time considerando dias corridos é importante.
+
+* A métrica levará em consideração os atrasos e o tempo gasto em espera gerado pelos finais de semana, feriados e dias não úteis. Podemos dizer que a métrica refletirá de fato a dor do cliente no caso de um bug não resolvido no sábado, ou perda da oportunidade de disponibilizar, em um feriado uma nova funcionalidade frente à concorrência.
+
+* Outro motivador para que você meça o lead time em dias corridos é de que ele representa o tempo necessário para se coletar feedback do cliente ou usuário, algo tão importante para quem trabalho no universo do conhecimento. Valor por si só é, em última instância, determinado pelo cliente, o que quer dizer que a equipe buscará ter certeza de estar recebendo feedback do valor gerado o mais rápido possível. A última coisa que você equipe buscam é criar algo que o cliente não precisa. Diminuindo o lead time, reduzimos o ciclo de feedback com nossos clientes.
+
+* Dada a consideração de todo tipo de espera, as projeções de entrega de um item (como falha, funcionalidade etc) a partir do histórico de lead time, serão mais previsíveis. Por exemplo, se um bug tem por padrão demorar 3 dias para ser corrigido e foi descoberta uma falha grave na quarta-feira, a equipe terá maior certeza de que, sendo iniciada na quinta-feira, até sábado o problema estará sanado e que ações específicas podem ser tomadas para tratar o caso, como, por exemplo: pessoas trabalhando um tempo extra durante a semana; redução nas etapas de aprovação de um deploy; priorização máxima nos testes etc.
+
+* As decisões que serão tomadas a partir do lead time levarão em consideração aspectos extras no fluxo de desenvolvimento da equipe e estarão relacionadas intimamente ao negócio. Por exemplo, quantos clientes meu produto perdeu por conta de determinado bug não ter sido resolvido mais rápido? Quantos clientes não aderiram ao produto por não termos colocado determinada funcionalidade em produção antes?
+
+<h3>Lead time dias úteis</h3>
+ 
+* Produto de software em desenvolvimento;
+* Melhorias centradas no processo de desenvolvimento da equipe;
+* Ainda não existe feedback do usuário;
+* Atraso influenciando o prazo de entrega;
+ 
+<h3>Lead time dias corridos</h3>
+ 
+* Produto de software em produção;
+* Melhorias em todo o fluxo, inclusive em esperas externas (ex: finais de semana);
+* Feedback do usuário é importante;
+* Atraso influenciado a perda de clientes atuais, a perda de oportunidades de mercado por conta da concorrência e a perda da credibilidade do produto;
+
+* Se vocẽ deseja que sua equipe não sofra com variações no lead time por conta de indefinições, antes que a equipe assuma o desenvolvimento de qualquer trabalho, proponha que ela responda às seguintes questões:
+
+* Qual o problema que precisamos resolver?
+* Qual o resultado esperado por quem demandou (como usuário)?
+* Existe alguma dependência de negócio ou ténica para esta demanda (integrações externas)? 
+* Existe algum tipo de informação de interface importante para que a demanda seja desenvolvida?
+* Os critérios para que haja o aceita da demanda são claros?
+
+Uma técnica que tem sido útil para aumentar o processo de aprendizado de novos membros é o pair programming. Com o passar dos anos, tenho observado algumas vantagens ao se adotar tal prática, como:
+
+* Aumento da atenção no processo de codificação, há uma queda no número de distrações e interrupções desnecessárias;
+* As pessoas ficam mais atentas aos padrões de qualidade de código definidos;
+* A necessidade de refatoração diminui;
+* Há um aumento da qualidade dos testes que são realizados;
+* Os desenvolvedores trocam conhecimento, o que gera soluções otimizadas e criativas;
+
+Ao iniciar o trabalho de análise do lead time de uma equipe, geralmente, começo de um conjunto de variáveis oriundas da estatística descritiva e que são comuns em nosso linguajar. São elas: média, moda, mediana e percentil.
+
+* Para extrairmos a média de um conjunto de dados numéricos, precisamos somar os valores de todos os dados e dividi-los pela quantidade de dados.
+
+* A moda é o valor mais frequente de um conjunto de dados.
+
+* A mediana nada mais é do que uma medida de localização do centro da distribuição dos dados, definida da seguinte maneira: ordenados os elementos do conjunto de dados, a mediana é o valor que o divide ao meio, isto é, 50% dos elementos do conjunto de dados são menores ou iguais à mediana e os outros 50% são maiores ou iguais a ela.
+
+* Ainda sobre medidas de localização, definimos que os percentis são medidas que dividem a amostra ordenada em 100 partes, cada uma com uma percentagem de dados aproximadamente igual. Quando dizemos que o percentil 75 possui o valor 7, estamos afirmando que 75% do conjunto de dados possui um valor inferior ou igual a 7, ou que 25% do conjunto possui um valor superior a 7.
+
+Venho observando alguns fatores que acabam sendo responsáveis por gerar situações de casos extremos e que você, assim como eu, já deve ter lidado em seu dia a dia. São eles:
+
+* Problema externos ao desenvolvimento da demanda que são mapeados tardiamente (exemplo: integrações com sistemas externos que não funcionam ou ambientes que não estão disponíveis quando necessário);
+* Dependência de terceiros para a finalização de uma entrega (exemplo: o desenvolvimento de uma funcionalidade exige o trabalho de design, mas o especialista não faz parte da equipe);
+* Falta de definição do que se espera como resultado de uma demanda (exemplo: ausência de critérios na etapa de validação de uma funcionalidade ou da correção de um bug);
+* Mudança no escopo de uma demanda ao longo do desenvolvimento (exemplo: o escopo de uma funcionalidade absorve mais do que era esperado inicialmente por ela);
+* Subestimação da complexidade do desenvolvimento de uma demanda (exemplo: a equipe, de forma extremamente otimista, assume o desenvolvimento de uma entrega sem ponderar sua complexidade técnica ou de negócios, ou a equipe inicia o desenvolvimento de uma história de usuário mal dimensionada);
+
+<h3>Dicas para correção dos problemas acima</h3>
+
+* Faça um trabalho de mentoria com o gestor do produto para que haja uma padronização na complexidade dos itens de trabalho;
+* Traga ferramentas para que a equipe diminua a complexidade e remova as incertezas técnica ou de negócios dos itens que serão trabalhados;
+* Analise a distribuição de lead time com frequência. No início do desenvolvimento de um projeto ou produto, a alta variabilidade do lead time será normal, porém, após algum tempo, é importante buscar um padrão;
+* Comunique aos stakeholders de um projeto ou produto qualquer a variação no lead time e desenvolva ações para controlar crescimentos;
+* Use casos extremos como uma oportunidade para aprender e melhorar o seu processo;
+* Limite o trabalho em progresso. Dessa forma, você estará monitorando o lead time de menos itens de trabalho e, consequentemente, melhorando a qualidade do que está sendo produzido pela equipe;
+
+<h3>Medir o número de entregas de uma equipe</h3>
+
+Depois de aprendermos a analisar o tempo que um item de trabalho leva para ser concluído (lead time) e a importância de monitorar o trabalho em progresso (WIP), neste capítulo teremos a oportunidade de conhecer a métrica chamada throughput. Você perceberá que a análise dela lhe ajudará a responder questões como:
+
+* Quantas demandas a equipe está conseguindo entregar dentro de um espaço tempo?
+* A equipe está vivendo um cenário no qual o número de entregas vem aumentando?
+* Existe algum tipo de bloqueio atrapalhando a capacidade de entrega da equipe?
+
+* Se a equipe em que você atua está lidando com uma entrega crica onde a data de entrega é uma variável sensível, monitore semanalmente o throughput para que seja possível propor melhorias e ações dentro de um curto espaço de tempo. Afinal, responder às mudanças o quanto antes será um fator crítico para que haja a entrega de valor dentro do prazo esperado.
+
+* Uma dúvida que pode estar surgindo na sua cabeça neste momento é: throughput seria o sinônimo de velocidade, utilizada comumente em equipes que adotam o Kanban? A resposta é não. Velocidade conforme definição da Zheglov (2016), representa o total de story points entregues por uma equipe ao longo de uma iteração (sprint). Story points é uma medida usada por equipes na mensuração do esforço necessário para desenvolver determinado requisito, funcionalidade, história do usuário, bug etc.
+
+* Já trabalhei com equipes nas quais o conceito de pronto girava em torno da liberação de uma funcionalidade em um ambiente de aprovação. O problema de se considerar algo entregue, mesmo sabendo que existam etapas posteriores, é a falsa impressão de progresso. Afinal, do que adianta 5 demandas “prontas” para serem aprovadas, mas, sem uma expectativa de quando elas de fato serão consumidas pelos clientes ou usuários? Portanto, sempre que possível, considere um item finalizado quando este estiver gerando valor para o seu negócio ou usuário final.
+
+Antes de finalizar este tópico gostaria de compartilhar quatro situações que podem ocasionar uma queda no throughput.
+
+* Itens de trabalho mal definidos - como histórias de usuários com critérios de aceite ruins;
+* Débitos técnicos - como reescrever uma parte do software inesperadamente;
+* Gargalos no processo - como equipe de testes sobrecarregada e fluxo de publicação com problemas;
+* Mudança no escopo de um item de trabalho ao longo do desenvolvimento - como inserção de um requisito não funcional no meio de uma iteração;
+
+<h3>Qual a relação entre WIP, Lead Time e Throughput?</h3>
+
+* O tempo médio de um item no processo de desenvolvimento (lead time) é igual a divisão do número médio de itens no processo (WIP) pelo número médio de itens que saem do sistema por unidade de tempo (throughput).
+
+L = W/A
+
+L = Média do lead time
+W = média de itens em WIP
+A = Média de throughput
+
+* A lei de Little, criada por John Little no início dos anos 60, tem relação com um conjunto de estudos desenvolvidos para compreender sistemas de fila. Segundo o próprio autor, um sistema de fila consiste em objetos discretos que podem ser chamados de itens, que chegam a alguma taxa em um sistema. Os itens podem ser carros em uma cabine de pedágio, pessoas em uma linha de um restaurante fast food, aviões em uma linha de produção ou instruções esperando para serem executadas em um computador.
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 
