@@ -44,3 +44,19 @@ Em 2010 David Anderson criou o que ele chamou de “sistema Kanban para desenvol
 * Útil para situações nas quais há uma alta taxa de incerteza e alta variabilidade sobre o trabalho que precisará ser executado.
 * Tende a se espalhar rapidamente por toda a organização e para outros departamentos, como por exemplo, RH.
 
+* Trabalhar com iterações no Kanban é algo opcional, faça tal controle de tempo caso o seu contexto exija. O mesmo se aplica para as estimativas. Dado que a sua equipe passou a medir, utilize os dados do passado como referência para desenhar cenários futuros. Por fim, o Kanban é apenas uma ferramenta para a gestão do fluxo de trabalho e, por isso, dificilmente ela substituirá qualquer outro tipo de ferramente que alicerce a forma com o é construído software.
+
+* Toda equipe que adota o Scrum deve estar sustentada por três pilares. O primeiro deles é a transparência, que tem como objetivo dar clareza e visibilidade sobre o trabalho que está sendo desenvolvido para todas as partes envolvidas.
+
+* O segundo pilar é a inspeção, que visa reforçar a ideia de que todo trabalho deve ser inspecionado com a frequência necessária para que haja a garantia da qualidade no produto final. O terceiro último pilar é a adaptação, que visa instigar a filosofia de melhoria contínua em todo o trabalho que é conduzido pela equipe com o objetivo de se atingir melhores resultados.
+
+<h4>Benefícios do Scrum</h4>
+
+* Criar uma organização estruturada em equipes pequenas, multifuncionais e auto-organizadas.
+* Ter clareza do trabalho necessário a partir de uma lista de entregas pequenas, concretas e priorizadas.
+* Dividir o ciclo de trabalho da equipe em períodos de tempo fixo, garantido uma maior frequência de entrega dentro de um espaço de tempo, o que pode trazer como resultado uma previsibilidade na cadência de entrega.
+* Otimizar o planejamento do produto que está sendo construído a partir da colaboração com os usuários e clientes, baseado no aprendizado obtido nas entregas passadas.
+* Otimizar o planejamento do produto que está sendo construído a partir da colaboração com os usuários e clientes, baseado no aprendizado obtido nas entregas passadas.
+* Promover melhorias no processo a partir de retrospectivas realizadas ao final de cada sprint.
+
+
