@@ -102,5 +102,52 @@ Existem cinco etapas decorrentes desses pressupostos:
 
 * Medir o WIP é um dos trabalhos mais importantes no monitoramento da saúde do processo de desenvolvimento de software, pois, como veremos nos próximos capítulos, ele é um dos preditores do desempenho geral do fluxo de desenvolvimento. Gerenciando o WIP, garantimos um controle na cadência das entregas e impactamos o tempo que uma demanda passará pelo fluxo de desenvolvimento.
 
+* Foque os esforços para diminuir o estoque da etapa de gargalo;
+* Não aumente o WIP até que a etapa do gargalo esteja em um nível saudável, afinal, ela determinará a capacidade de vazão do processo;
+* Podemos ter uma maior previsibilidade de qual é a capacidade de trabalho do time em qualquer espaço de tempo;
+* Reduzimos a quantidade de trabalho “quase pronto”, forçando o time a se concentrar em um conjunto menor de tarefa e incentivando a cultura de “pronto”;
+* Gargalos e bloqueios ficarão visíveis e serão destacados antes de uma situação se tornar difícil de ser gerenciada. Uma vez que os bloqueios são removidos, o trabalho de toda a equipe começa a fluir novamente;
+* Quanto mais trabalho colocamos dentro do fluxo de desenvolvimento do time, menor será a qualidade;
+
+* Estimule os membros do time a enxergarem que eles não estão parados, mas sim que ganharam tempo para olhar o fluxo de desenvolvimento como um todo e que estão aptos a alocar o esforço disponível em algum lugar que esteja precisando de apoio.
+
+* Podemos concluir que o Scrum limita o WIP indiretamente, enquanto o Kanban limita o WIP diretamente. Além disso podemos dizer que o Scrum limita o WIP por unidade de tempo, enquanto o Kanban limita o WIP por etapa de fluxo de trabalho.
+
+* Story Mapping é uma técnica colaborativa que auxilia na priorização e no planejamento de releases de produtos interativos.
+
+* Para Pichler (2010) sobre o que caracteriza uma demanda pronta para ser trabalhada. O autor diz que qualquer demanda, para ser considerada pronta para ser desenvolvida, deve ser clara, confiável e testável.
+
+<h3>Questões orientadoras</h3>
+
+* Qual o problema a ser resolvido?
+* Qual o resultado esperado?
+* Existe alguma dependência de negócio ou técnica para esta demanda?
+* A demanda depende de alguma definição visual?
+* Quais são os critérios de aceite que garantirão a verificação e a validação da demanda?
+* Existe algum requisito não funcional (exemplo: performance, design) que deve ser atendido?
+
+<h3>Critérios para definir se uma demanda está pronta para ser trabalhada</h3>
+
+* Demanda definida e escrita;
+* Critérios de aceite definidos e compreendidos por todos do time;
+* Dependências identificadas;
+* Informações de interfaces definidas (quando necessário);
+* Critérios de desempenho definidos (quando necessário);
+* Existência de um alinhamento entre as partes que construirão e avaliarão a demanda;
+
+* Mike Cohn, define que uma história de usuário com qualidade deve seguir os critérios agrupados no acrônimo INVEST. O autor defende que, se a história falhar em algum dos critérios, o time deverá repensá-la ou até mesmo reescrevê-la.
+
+* <b>Independent (Independente):</b> histórias devem ser independentes uma das outras sempre que possível, para que seja fácil priorizá-las.
+* <b>Negotiable (Negociável):</b> histórias não são contratos para implementar funcionalidades. Boas histórias captam a essência e não os detalhes.
+* <b>Valuable (Tenha valor):</b> se uma história não tem valor perceptível, ela não deve ser feita.
+* <b>Estimable (Estimável):</b> toda história tem de ser estimável e dimensionável, me modo  que possa ser convenientemente priorizada.
+* <b>Small (Pequena):</b> boas histórias são pequenas, pois são mais fáceis de se estimar e planejar.
+* <b>Testable (Testável):</b> os testes demonstram que uma história alcançou as expectativas dos usuários/clientes.
+
+
+
+
+
+
 
 
