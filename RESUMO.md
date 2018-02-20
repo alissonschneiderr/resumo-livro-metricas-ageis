@@ -78,5 +78,22 @@ Em 2010 David Anderson criou o que ele chamou de “sistema Kanban para desenvol
 
 <h3>Crie seu processo de desenvolvimento de forma madura</h3>
 
+Durante a década de 1980, o físico israelense Eliyahu Goldratt criou uma teoria chamada Teoria das Restrições, também conhecida como TOC. A TOC é baseada em três pressupostos: uma organização possui uma meta a ser atingida; uma organização é mais que a soma de suas partes; e o desempenho de uma organização é limitado por poucas variáveis ditas restrições do sistema.
 
+Existem cinco etapas decorrentes desses pressupostos:
+
+* Identificar as restrições do sistema;
+* Decidir como explorá-las;
+* Subordinar tudo o mais à decisão anterior;
+* Elevar as restrições do sistema;
+* Voltar à primeira etapa sem permitir que a inércia cause uma nova restrição;
+
+* Trazendo o conceito colocado por Goldratt para o processo de uma equipe que desenvolve software é como se passássemos a olhar o fluxo de trabalho a partir de uma visão sistêmica, isto é, enxergando-o como um fluxo contínuo em vez de segmentá-lo em diversas unidades independentes (como desenvolvimento, testes e publicação são etapas de um mesmo processo, e não unidades independentes). Isso garante que todo o sistema esteja alinhado com uma única meta (no caso de uma equipe de entregar software de forma ágil) e permite que os gargalos possam ser trabalhados para atingi-la mais facilmente.
+
+* Imagine que a equipe XPTO possui as etapas de A fazer, Em desenvolvimento, Em Testes, Em Aprovação e Finalizado. Uma estratégia que poderia ser adotada é a de criar etapas sinalizando o aguardo de uma demanda.
+
+* A segunda dica ao construir o seu processo é: evite criar um ambiente orientado a tarefas e favoreça um ambiente a missão.
+
+
+* 
 
