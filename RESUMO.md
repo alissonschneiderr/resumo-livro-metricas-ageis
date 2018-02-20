@@ -94,6 +94,13 @@ Existem cinco etapas decorrentes desses pressupostos:
 
 * A segunda dica ao construir o seu processo é: evite criar um ambiente orientado a tarefas e favoreça um ambiente a missão.
 
+<h3>A Importância de Analisar o Trabalho em Progresso</h3>
 
-* 
+* O WIP refere-se a todos os materiais e produtos parcialmente acabados que estão em diferentes estágios do fluxo de desenvolvimento. Para o contexto do trabalhador do conhecimento, o WIP geralmente se traduz em uma demanda importante que foi começada, mas que ainda não está fornecendo valor para o cliente. Essencialmente é um investimento que não gera retorno, e se deprecia com o passar do tempo.
+
+* Independente do processo que o seu time estiver usando, só será possível identificar a quantidade de trabalho em progresso a partir do momento em que estiverem claras as etapas de entrada e saída do processo.
+
+* Medir o WIP é um dos trabalhos mais importantes no monitoramento da saúde do processo de desenvolvimento de software, pois, como veremos nos próximos capítulos, ele é um dos preditores do desempenho geral do fluxo de desenvolvimento. Gerenciando o WIP, garantimos um controle na cadência das entregas e impactamos o tempo que uma demanda passará pelo fluxo de desenvolvimento.
+
+
 
