@@ -11,7 +11,7 @@
 * Usar a hipótese para fazer uma predição = Suposições de utilidade do produto no mundo real
 * Testar a predição através de experimentos ou novas observações, e modificar a hipótese com base nos resultados do teste = Pegar o feedback e dar uma nova diretiva
 
-<h3>Estrutura de tópicos de cada capítulo apresentado</h3>
+<h3>Planejamento, Execução, Verificação = Ação</h3>
 
 * Uma das grandes dificuldades que as equipes têm ao construírem uma solução é a de compreenderem como ela se conecta com os objetivos de negócio de uma organização. Como reflexo de tal desalinhamento, temos situações nas quais são criadas soluções em que grande parte das funcionalidades raramente ou nunca utilizadas.
 
@@ -23,7 +23,7 @@
 
 * O modelo tradicional não serve para nenhum caso? Depende. Se você está lidando com situações nas quais há uma clareza nas funcionalidades que precisarão ser construídas e que não haverá qualquer tipo de mudança no que se espera com o produto final, utilizar um modelo tradicional pode ser mais eficiente. Agora, dada a natureza da incerteza que envolve o desenvolvimento de software e sabendo que a única certeza é que existirão mudanças, é aconselhável se pensar em seguir o processo ágil.
 
-<h4>Kanban</h4>
+<h3>Kanban</h3>
 
 Em 2010 David Anderson criou o que ele chamou de “sistema Kanban para desenvolvimento de software”, que combina o pensamento lean e a teoria das restrições.
 
@@ -36,7 +36,7 @@ Em 2010 David Anderson criou o que ele chamou de “sistema Kanban para desenvol
 * <b>Desenvolva loops de feedback:</b> Reduza o tempo do ciclo de feedback, pois quanto mais tardia a entrega, mais demorada será a geração de valor daquilo que foi trabalhado.
 * <b>Melhore de forma colaborativa:</b> Exerça a filosofia de melhoria contínua baseada no kaizen.
 
-<h4>Benefícios Kanban</h4>
+<h3>Benefícios Kanban</h3>
 
 * Os gargalos do processo ficarão visíveis em tempo real, o que levará as pessoas a colaborarem para otimizar toda a cadeia de valor em vez de olhar apenas para a sua parte.
 * Provê um caminho mais ameno quando a organização está em um processo de transição de uma abordagem tradicional para uma abordagem de desenvolvimento de software ágil.
@@ -50,7 +50,7 @@ Em 2010 David Anderson criou o que ele chamou de “sistema Kanban para desenvol
 
 * O segundo pilar é a inspeção, que visa reforçar a ideia de que todo trabalho deve ser inspecionado com a frequência necessária para que haja a garantia da qualidade no produto final. O terceiro último pilar é a adaptação, que visa instigar a filosofia de melhoria contínua em todo o trabalho que é conduzido pela equipe com o objetivo de se atingir melhores resultados.
 
-<h4>Benefícios do Scrum</h4>
+<h3>Benefícios do Scrum</h3>
 
 * Criar uma organização estruturada em equipes pequenas, multifuncionais e auto-organizadas.
 * Ter clareza do trabalho necessário a partir de uma lista de entregas pequenas, concretas e priorizadas.
@@ -59,7 +59,7 @@ Em 2010 David Anderson criou o que ele chamou de “sistema Kanban para desenvol
 * Otimizar o planejamento do produto que está sendo construído a partir da colaboração com os usuários e clientes, baseado no aprendizado obtido nas entregas passadas.
 * Promover melhorias no processo a partir de retrospectivas realizadas ao final de cada sprint.
 
-<h4>Boas práticas de engenharia de software</h4>
+<h3>Boas práticas de engenharia de software</h3>
 
 * Equipe unida;
 * Planejamento contínuo;
@@ -76,7 +76,7 @@ Em 2010 David Anderson criou o que ele chamou de “sistema Kanban para desenvol
 * Design Incremental;
 * Colaboração no código;
 
-<h4>Crie seu processo de desenvolvimento de forma madura</h4>
+<h3>Crie seu processo de desenvolvimento de forma madura</h3>
 
 
 
