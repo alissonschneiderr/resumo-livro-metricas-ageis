@@ -1,5 +1,5 @@
 # Métricas Ágeis
-Obtenha melhores resultados em sua equipe
+<h2>Obtenha melhores resultados em sua equipe</h2>
 
 “Metrificar é o primeiro passo para o controle e eventualmente para melhoria. Se você não consegue medir algo, você não consegue entendê-lo. Se você não consegue capturá-lo, você não consegue controlá-lo. Se você não consegue controlá-lo, você não consegue melhorá-lo”. 
 <b>HARRIGTON, H. James.</b>
@@ -58,5 +58,25 @@ Em 2010 David Anderson criou o que ele chamou de “sistema Kanban para desenvol
 * Otimizar o planejamento do produto que está sendo construído a partir da colaboração com os usuários e clientes, baseado no aprendizado obtido nas entregas passadas.
 * Otimizar o planejamento do produto que está sendo construído a partir da colaboração com os usuários e clientes, baseado no aprendizado obtido nas entregas passadas.
 * Promover melhorias no processo a partir de retrospectivas realizadas ao final de cada sprint.
+
+<h4>Boas práticas de engenharia de software</h4>
+
+* Equipe unida;
+* Planejamento contínuo;
+* Entregas curtas;
+* Testes a partir da visão do cliente;
+* Propriedade coletiva do código;
+* Padronização de código;
+* Ritmo de entrega sustentável;
+* Metáforas para compartilhar conceitos gerais sobre o software criado;
+* Integração contínua;
+* Desenvolvimento orientado a testes;
+* Melhoria da qualidade do código existente;
+* Simplicidade no software escrito e programação em par;
+* Design Incremental;
+* Colaboração no código;
+
+<h4>Crie seu processo de desenvolvimento de forma madura</h4>
+
 
 
